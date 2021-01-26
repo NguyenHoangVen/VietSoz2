@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +17,40 @@
 </head>
 <body>
 	<div id="wrapper">
-		<?php
-		require "inc/header.php";
-		?>
-		<div id="wp-slider-top">
+		<div id="header">
+	<div class="wp-inner clearfix">
+		<a href="home.php" id="logo" class="fl-left"><img src="public/images/logo.png" alt="Logo" title="Trang chủ"></a>
+		<ul id="main-menu" class="fl-left">
+			<li><a href="home.php">Trang chủ</a></li>
+			<li><a href="home.php">Về chúng tôi</a></li>
+			<li><a class="angle-down" href="category.php">Sản phẩm</a>
+				<ul class="sub-menu">
+					<li><a href="detail.php">Mùa xuân</a></li>
+					<li class="active"><a class="angle-right" href="detail.php">Mùa hạ</a>
+						<ul class="sub-menu">
+							<li><a href="detail.php">Áo vải lụa</a></li>
+							<li><a href="detail.php">Quần form rộng</a></li>
+							<li><a href="detail.php">Đồ bơi</a></li>
+						</ul>
+					</li>
+					<li><a href="detail.php">Mùa thu</a></li>
+					<li><a href="detail.php">Mùa đông</a></li>
+				</ul>
+			</li>
+			<li><a href="category.php">Xu hướng</a></li>
+			<li><a href="category.php">Thanh toán</a></li>
+			<li><a href="category.php">Liên hệ</a></li>
+		</ul>
+		<div id="widget-search" class="fl-left">
+			<i id="icon-search" class="fa fa-search" aria-hidden="true"></i>
+			<form id="box1-search" class="show">
+				<input type="text" name="keyword" id="keyword" placeholder="Tìm kiếm">
+				<button type="submit" id="search" name="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+			</form>
+		</div>
+		<a class="fl-right" id="basket" href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+	</div>
+</div>		<div id="wp-slider-top">
 			<div class="owl-carousel owl-theme">
 			    <div class="item">
 			    	<a class="post-thumb" href="category.php"><img src="public/images/home/slider.png" alt="Slider"></a>
@@ -238,9 +269,58 @@
 					<button id="sm_register" name="sm_register">Đăng ký</button>
 				</form>
 		</div>
-		<?php
-		require "inc/footer.php";
-		?>
+		<div id="footer">
+	<div class="wp-inner clearfix">
+		<div class="widget about fl-left">
+			<div class="widget-title">
+				<img src="public/images/home/logo.png" alt="Logo" title="Logo">
+			</div>
+			<div class="widget-content">
+				<p class="text-justify post-desc">Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung" là nó khiến văn bản giống thật hơn, bình thường hơn.</p>
+			</div>
+		</div>
+		<div class="widget cat fl-left">
+			<div class="widget-title">
+				<p>Danh mục</p>
+			</div>
+			<div class="widget-content">
+				<ul class="list-cat">
+					<li><a href="category.php">Thời trang thu đông</a></li>
+					<li><a href="category.php">Thời trang thu đông</a></li>
+					<li><a href="category.php">Thời trang thu đông</a></li>
+					<li><a href="category.php">Thời trang thu đông</a></li>
+					<li><a href="category.php">Thời trang thu đông</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="widget product-output fl-left">
+			<div class="widget-title">
+				<p>Bán chạy</p>
+			</div>
+			<div class="widget-content">
+				<ul class="list-product-output">
+					<li><a href="category.php">Thời trang thu đông</a></li>
+					<li><a href="category.php">Thời trang thu đông</a></li>
+					<li><a href="category.php">Thời trang thu đông</a></li>
+					<li><a href="category.php">Thời trang thu đông</a></li>
+					<li><a href="category.php">Thời trang thu đông</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="widget fanpage fl-right">
+			<div class="widget-title">
+				<p>Fanpage</p>
+			</div>
+			<div class="widget-content">
+				<div id="fanpage">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=285&height=225&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="285" height="225" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				</div>
+			</div>
+		</div>
 	</div>
+</div>
+<div id="copyright">
+	<p class="text-center">© 2017  All rights reserved -  Bản quyền thuộc về Vietsoz.com</p>
+</div>	</div>
 </body>
 </html>
