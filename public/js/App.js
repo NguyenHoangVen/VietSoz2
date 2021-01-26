@@ -1,0 +1,79 @@
+$(document).ready(function(){
+    $('#wp-slider-top .owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+    setInterval(function(){
+        $('#wp-slider-top .owl-carousel .owl-next').click();
+    },2000);
+    $('#wp-slider-product-hot .owl-carousel').owlCarousel({
+        loop:true,
+        margin:12,
+        nav:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    $('#wp-slider-product-trend .owl-carousel').owlCarousel({
+        loop:true,
+        margin:35,
+        nav:false,
+        dots:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+    $('#wp-slider-cat .owl-carousel').owlCarousel({
+        loop:true,
+        margin:12,
+        nav:false,
+        dots:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    $("#icon-search").click(function(){
+        $("#box1-search").slideToggle();
+    });
+    $("#email").click(function(){
+        $(this).css('background', 'black');
+    });
+});
